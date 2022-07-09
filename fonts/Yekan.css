@@ -1,0 +1,13 @@
+/* Webfont: Yekan */
+@font-face {
+  font-family: "Yekan";
+  src: url(../fonts/IranianSans.ttf) format("ttf"); /* IE9 Compat Modes */
+
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+/* h1 {
+  font-family: "Yekan" !important;
+} */

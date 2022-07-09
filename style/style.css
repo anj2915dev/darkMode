@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item__nav {
+  @apply px-1 border-b-2 border-white border-opacity-0    focus-within:border-b-2 focus-within:border-opacity-100 focus-within:border-blue-700 focus-within:text-blue-700  dark:focus-within:text-blue-700  dark:text-slate-50 text-gray-600;
+}
+.item__footer {
+  @apply flex items-center p-2 cursor-pointer  font-bold text-sm justify-around;
+}
+.img__footer {
+  @apply w-14 h-14;
+}
+.box__footer {
+  @apply w-full h-full border bg-white dark:bg-slate-800 dark:text-white dark:border-none  shadow-sm rounded-md;
+}
+.activ {
+  @apply scale-0 opacity-0 invisible;
+}
+.btn__scroll {
+  @apply  rounded-full overflow-hidden  text-xs  flex flex-row-reverse  items-center p-23 text-white  fixed bottom-28 right-28  bg-blue-700 hover:bg-blue-800 transition-all duration-200 ease-in-out;
+}
+.btn__search {
+  @apply p-2  hover:bg-blue-500  hover:text-white transition-all duration-200;
+}
+.hide {
+  @apply invisible scale-0 opacity-0;
+}
+.dark__theme {
+  @apply bg-slate-800 absolute w-0 opacity-0 invisible dark:opacity-100 dark:visible  dark:w-full h-0 dark:h-full transition-all  duration-1000  p-5 delay-100 z-0;
+}
+header {
+  @apply p-5 dark:bg-slate-900 dark:border-b duration-1000  delay-200 dark:border-b-slate-600  pb-0 border-b border-gray-300  flex;
+}
+.search {
+  @apply border dark:bg-slate-600  transition-colors duration-1000  dark:border-none border-gray-300  flex rounded-md overflow-hidden;
+}
+.box__setting {
+  @apply z-50  p-5 dark:bg-slate-600  dark:border-none bg-white dark:bg-none border  border-gray-200 shadow-lg absolute w-52 -left-2/3  -bottom-80 h-80 rounded-md transition-all duration-150;
+}
+.content{
+  @apply text-sm text-gray-500 mt-2 dark:text-slate-300
+}
