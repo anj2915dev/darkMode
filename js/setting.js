@@ -1,10 +1,10 @@
 const btnDark = document.querySelector(".btn__dark");
-const btnlite = document.querySelector(".btn__lite");
+const btnLite = document.querySelector(".btn__lite");
 const itemFontSize = document.querySelector(".font__size");
 const itemFontFamily = document.querySelector(".font__family");
 const domHtml = document.querySelector("html");
 
-class settings {
+export class settings {
   // add font and theme in loclStorage
   setLocalStoreage(s) {
     window.localStorage.setItem("seting", JSON.stringify(s));
@@ -24,8 +24,8 @@ class settings {
     });
   }
   // add theme Lite
-  thimeLite() {
-    btnlite.addEventListener("click", (e) => {
+  themeLite() {
+    btnLite.addEventListener("click", (e) => {
       const obj1 = { ...this.getData(), theme: "lite" };
 
       domHtml.classList.remove("dark");
@@ -34,7 +34,7 @@ class settings {
     });
   }
   //   select fontSize
-  setfontSize(fontSize) {
+  setFontSize(fontSize) {
     switch (fontSize) {
       case "12":
         domHtml.classList.add("text-xs");
@@ -58,7 +58,7 @@ class settings {
         break;
     }
   }
-  setfontFamily(fontFamily) {
+  setFontFamily(fontFamily) {
     switch (fontFamily) {
       case "Yekan":
         domHtml.classList.add("font__iran");
@@ -76,7 +76,7 @@ class settings {
       // edit object at  localStorage
       const obj1 = { ...this.getData(), font: numberFont };
 
-      this.setfontSize(numberFont);
+      this.setFontSize(numberFont);
       this.setLocalStoreage(obj1);
     });
   }
@@ -86,7 +86,7 @@ class settings {
       // edit object at  localStorage
       const obj1 = { ...this.getData(), fontFamily: fontFamily };
 
-      this.setfontFamily(fontFamily);
+      this.setFontFamily(fontFamily);
       this.setLocalStoreage(obj1);
     });
   }
@@ -102,14 +102,14 @@ class settings {
     if (window.localStorage.length != 0) {
       const font = this.getData().font;
       itemFontSize.value = font;
-      this.setfontSize(font);
+      this.setFontSize(font);
     }
   }
   checkFontFamilyPage() {
     if (window.localStorage.length != 0) {
       const font = this.getData().fontFamily;
       itemFontFamily.value = font;
-      this.setfontFamily(font);
+      this.setFontFamily(font);
     }
   }
 }
@@ -117,7 +117,7 @@ class settings {
 window.addEventListener("DOMContentLoaded", (e) => {
   const setting = new settings();
   setting.themeDark();
-  setting.thimeLite();
+  setting.themeLite();
   setting.selectFontSize();
   setting.selectFontFamily();
   setting.checkThemePage();

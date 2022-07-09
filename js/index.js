@@ -6,6 +6,8 @@ const searchBox = document.querySelector(".search__box");
 const btnClear = document.querySelector(".btn__clear");
 const btnSearch = document.querySelector(".btn__search");
 
+import { settings } from "./setting.js";
+
 const body = document.querySelector("body");
 const checkElement = (e) => {
   let flag = true;
