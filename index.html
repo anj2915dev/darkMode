@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="font__iran">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="  relative ">
+<body class=" relative  text-xl">
     <div class=dark__theme ">
     </div>
     <div class=" flex flex-col justify-between z-50 relative ">
@@ -26,8 +26,8 @@
 
             <!-- input search -->
             <div class=" search ">
-                <input type="text"
-                    class=" search__box dark:bg-slate-600  transition-colors duration-1000  p-2 0 w-full  outline-none    ">
+                <input type="text "
+                    class=" search__box  box-content dark:bg-slate-600 dark:text-white text-xl    p-2 0 w-full  outline-none    ">
                 <span class="btn__clear  p-2 px-3 cursor-pointer invisible  transition-all duration-150 ">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-red-600" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -44,14 +44,14 @@
                 </button>
             </div>
             <nav class=" flex justify-between w-full  ">
-                <ul class=" flex  gap-x-1 justify-between mt-5  ">
+                <ul class=" flex   gap-x-1 justify-between mt-5  ">
                     <li class="item__nav "><a class="flex gap-x-1 pb-1" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
-                            <span>All</span>
+                            <span class="">All</span>
 
                         </a>
                     </li>
@@ -98,8 +98,8 @@
                             <span>Shopping</span></a>
                     </li>
                 </ul>
-                <div class=" relative ">
-                    <button class="btn__steting   mt-5 flex gap-x-1 text-gray-600 hover:text-gray-700">
+                <div class=" relative  ">
+                    <button class="btn__steting   ml-10 mt-5 flex gap-x-1 text-gray-600 hover:text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -138,10 +138,10 @@
                                 <select name=" " class=" font__size  p-1  rounded-md outline-none dark:bg-slate-600" id="
                              
                             ">
-                                    <option value="defult">defult</option>
-                                    <option value="12">12</option>
-                                    <option value="14">14</option>
-                                    <option value="16">16</option>
+
+                                    <option value="کوچک">کوچک</option>
+                                    <option value="متوسط">متوسط</option>
+                                    <option value="بزرگ">بزرگ</option>
                                 </select>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
             </nav>
 
         </div>
-        <div class=" w-2/5 h-10  flex items-center flex-row-reverse gap-x-5">
+        <div class=" w-2/5 h-10   flex items-center flex-row-reverse gap-x-5">
             <svg xmlns="http://www.w3.org/2000/svg"
                 class="h-7 w-7 text-gray-300 hover:bg-gray-500 p-1 rounded-md cursor-pointer  transition-colors  "
                 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -182,45 +182,95 @@
                         clip-rule="evenodd" />
                 </svg>
             </span>
+            <span class=" dark:text-slate-100 text-slate-500">Help Spread DuckDuckGo!</span> <span
+                class=" text-red-500 ">&#10084</span>
 
-            <span
-                class="flex items-center flex-row-reverse gap-x-1 text-gray-300 hover:text-gray-500 text-sm cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                </svg>
-                Help Spread DuckDuckGo! <span class=" text-red-500 text-xl">&#10084</span>
-            </span>
+
+
         </div>
         </header>
-        <section class="min-h-[78vh]">
-            <div class=" pl-16 p-1  text-gray-500 dark:text-slate-50 sm:w-3/6 flex justify-center gap-x-6 text-sm  ">
-                <a href="" class="  flex gap-x-1 items-center  flex-row-reverse "> <svg
+        <section class="min-h-[78vh] relative ">
+            <div
+                class=" text-inherit  pl-16 p-1  text-gray-500 dark:text-slate-50 sm:w-3/6 flex justify-center gap-x-6   ">
+                <button class="btn__regions   flex gap-x-1 items-center  flex-row-reverse "> <svg
                         xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                             clip-rule="evenodd" />
-                    </svg><span>All regions</span></a>
-                <a href="" class=" flex gap-x-1 items-center  flex-row-reverse "> <svg
+                    </svg><span class=" ">All regions</span>
+                </button>
+                <div
+                    class="box__regions hide w-1/6  dark:bg-slate-700 dark:border-none  bg-white border shadow-xl  absolute  left-24 rounded-md  top-10">
+                    <ul>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                    </ul>
+                </div>
+                <button class="btn__moderate  flex gap-x-1 items-center  flex-row-reverse "> <svg
                         xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                             clip-rule="evenodd" />
-                    </svg><span>Safe search: moderate</span></a>
-                <a href="" class=" flex gap-x-1 items-center  flex-row-reverse "> <svg
+                    </svg><span>Safe search: moderate</span></button>
+
+                <div
+                    class="box__moderate hide  w-1/6  dark:bg-slate-700 dark:border-none  bg-white border shadow-xl  absolute right-2/3 rounded-md  top-10">
+                    <ul>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                    </ul>
+                </div>
+                <button class="btn__Anytime  flex gap-x-1 items-center  flex-row-reverse "> <svg
                         xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                             clip-rule="evenodd" />
-                    </svg><span>Any time</span></a>
+                    </svg><span>Any time</span></button>
+
+                <div
+                    class="box__Anytime hide  w-1/6  dark:bg-slate-700 dark:border-none  bg-white border shadow-xl  absolute right-2/4 rounded-md  top-10">
+                    <ul>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                        <li
+                            class=" hover:bg-gray-100 dark:hover:bg-slate-500 dark:text-slate-200 text-slate-700 w-full p-1 cursor-pointer">
+                            item1</li>
+                    </ul>
+                </div>
 
             </div>
             <div class=" min-h-[78vh]  w-2/3  flex flex-col  items-center ">
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -232,7 +282,7 @@
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -244,7 +294,7 @@
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -256,7 +306,7 @@
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -268,7 +318,7 @@
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -280,7 +330,7 @@
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -292,7 +342,7 @@
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -304,7 +354,7 @@
                 <!-- item1 -->
                 <div class="w-2/3  py-2 ">
                     <span class="block text-sm text-gray-500">www.alibaba.ir</span>
-                    <a href="https://www.alibaba.ir/"><span class=" font-normal text-blue-700 text-xl ">
+                    <a href="https://www.alibaba.ir/"><span class="link__content ">
                             به علی بابا خوش آمدید
                         </span></a>
                     <p class="content">
@@ -358,7 +408,7 @@
             </div>
         </footer>
     </div>
-    <script type="module"  src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 
 </body>
 

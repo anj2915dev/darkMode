@@ -2,7 +2,9 @@ const btnDark = document.querySelector(".btn__dark");
 const btnLite = document.querySelector(".btn__lite");
 const itemFontSize = document.querySelector(".font__size");
 const itemFontFamily = document.querySelector(".font__family");
-const domHtml = document.querySelector("html");
+const domHtml = document.querySelector("*");
+const elements = document.querySelectorAll("body");
+const searchBox = document.querySelector(".search__box");
 
 export class settings {
   // add font and theme in loclStorage
@@ -35,28 +37,29 @@ export class settings {
   }
   //   select fontSize
   setFontSize(fontSize) {
-    switch (fontSize) {
-      case "12":
-        domHtml.classList.add("text-xs");
-        domHtml.classList.remove("text-sm");
-        domHtml.classList.remove("text-xl");
-        break;
-      case "14":
-        domHtml.classList.add("text-sm");
-        domHtml.classList.remove("text-xs");
-        domHtml.classList.remove("text-xl");
-        break;
-      case "16":
-        domHtml.classList.add("text-xl");
-        break;
+    elements.forEach((i) => {
+     
+      switch (fontSize) {
+        case "کوچک":
+          i.classList.add("text-sm");
+          i.classList.remove("text-2xl");
+          i.classList.remove("text-xl");
 
-      case "defult":
-        domHtml.classList.remove("text-xs");
-        domHtml.classList.remove("text-sm");
-        domHtml.classList.remove("text-xl");
+          break;
+        case "متوسط":
+          i.classList.add("text-xl");
+          i.classList.remove("text-sm");
+          i.classList.remove("text-2xl");
 
-        break;
-    }
+          break;
+        case "بزرگ":
+          i.classList.add("text-2xl");
+          i.classList.remove("text-sm");
+          i.classList.remove("text-xl");
+
+          break;
+      }
+    });
   }
   setFontFamily(fontFamily) {
     switch (fontFamily) {
@@ -124,3 +127,5 @@ window.addEventListener("DOMContentLoaded", (e) => {
   setting.checkFontSizePage();
   setting.checkFontFamilyPage();
 });
+
+
